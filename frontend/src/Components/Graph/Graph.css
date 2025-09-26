@@ -1,0 +1,66 @@
+/* Container for the graphs */
+.graph-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 80px 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for graph container */
+.graph-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Individual graph cards */
+.graph-1, .graph-2, .graph-3 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 80px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for individual graph cards */
+.graph-1:hover, .graph-2:hover, .graph-3:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+}
+
+/* Graph titles */
+.graph-1 h2, .graph-2 h2, .graph-3 h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4e54c8;
+  margin-bottom: 60px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Add this at the end of your file for legend layout fix */
+.custom-legend-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto); /* 3 items per row */
+  gap: 10px 18px; /* vertical and horizontal gap between legend items */
+  margin-top: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  justify-content: flex-start;
+  max-width: 420px;
+}

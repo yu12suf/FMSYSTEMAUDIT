@@ -1,0 +1,146 @@
+/* frontend/src/components/Login/Login.css */
+
+.login-page {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center the login card below the header */
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.login-card h2 {
+  margin-bottom: 25px;
+  color: #333;
+  font-size: 1.8em;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
+
+.login-button {
+  background-color: #234d26;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 15px;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.2);
+}
+
+.login-button:hover {
+  background-color: #28a745;
+  transform: translateY(-2px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.success-message {
+  color: #28a745;
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* Header: full width, modern color, bigger height */
+.header.login-header {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #234d26;
+  padding: 1.5rem 2rem;
+  height: 110px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2.5rem;
+}
+
+.logo {
+  height: 90px;
+  object-fit: contain;
+}
+
+.project-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fefefe;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .login-card {
+    margin: 20px;
+    padding: 20px;
+  }
+  .header.login-header {
+    padding: 0.7rem 0.5rem;
+    height: 70px;
+  }
+  .logo {
+    height: 45px;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+}

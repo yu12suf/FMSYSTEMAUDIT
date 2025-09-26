@@ -1,0 +1,206 @@
+/* Root container */
+.view-file-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: #f8fafc;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.10);
+  border: 1.5px solid #e5e7eb;
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #1a202c;
+}
+
+/* Heading */
+.view-file-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  flex: 1 1 200px;
+  padding: 0.7rem 1.1rem;
+  border: 1.5px solid #b0bec5;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  color: #263238;
+  transition: border 0.2s;
+}
+
+.search-bar input[type="text"]:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.search-button {
+  padding: 0.7rem 1.5rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.search-button:hover,
+.upload-file-btn:hover {
+  background: #1565c0;
+}
+
+/* Record Details */
+.record-details {
+  background: #e3eafc;
+  border-radius: 10px;
+  padding: 1.5rem 1rem 1rem 1rem;
+  margin-bottom: 2rem;
+  border: 1.5px solid #c5cae9;
+}
+
+.record-details h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #283593;
+  margin-bottom: 1rem;
+}
+
+.record-details > div {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.record-details strong {
+  min-width: 180px;
+  color: #263238;
+  font-weight: 600;
+}
+
+/* View Files Button */
+.upload-file-btn {
+  margin-top: 1.2rem;
+  padding: 0.6rem 1.3rem;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.07);
+}
+
+/* Files Section */
+.files-uploaded-section {
+  margin-top: 2rem;
+  background: #f1f6fb;
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  border: 1.5px solid #b0bec5;
+}
+
+.files-uploaded-section h4 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1565c0;
+  margin-bottom: 1rem;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 0.7rem 0.3rem;
+  border-bottom: 1px solid #e3eafc;
+  font-size: 1.05rem;
+}
+
+.file-list li:last-child {
+  border-bottom: none;
+}
+
+.file-icon {
+  font-size: 1.4rem;
+  color: #1976d2;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #263238;
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-category {
+  background: #e3eafc;
+  color: #1976d2;
+  font-size: 0.95rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+}
+
+.file-view-link {
+  margin-left: auto;
+  padding: 0.4rem 1.1rem;
+  background: #388e3c;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.98rem;
+  transition: background 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.file-view-link:hover {
+  background: #256029;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+  .view-file-container {
+    padding: 1.2rem 0.5rem;
+  }
+  .record-details strong {
+    min-width: 120px;
+  }
+  .file-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+  .file-view-link {
+    margin-left: 0;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+  }
+}

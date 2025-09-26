@@ -1,0 +1,121 @@
+/* frontend/src/components/Layout/AdminLayout.css */
+
+/* --- Modern Layout & Styling for Admin Panel (matches Home) --- */
+
+.admin-home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #f8fafc;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #234d26;
+  padding: 0.8rem 1.5rem;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  height: 70px;
+  object-fit: contain;
+}
+
+.project-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fefefe;
+}
+
+.menu-bar {
+  background-color: #1f2937;
+  padding: 0.8rem 2rem;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-bar li {
+  color: #ffffff;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}
+
+.menu-bar li:hover,
+.menu-bar li.logout:hover {
+  background-color: #374151;
+}
+
+.menu-bar li.logout {
+  background: linear-gradient(90deg, #e74c3c 0%, #c0392b 100%);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  margin-left: auto;
+  transition: background 0.2s;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+/* Responsive: Medium Laptops */
+@media (max-width: 1200px) {
+  .header .project-title {
+    font-size: 1.3rem;
+  }
+  .logo {
+    height: 60px;
+  }
+  .menu-bar ul {
+    gap: 1rem;
+  }
+}
+
+/* Responsive: Tablets */
+@media (max-width: 992px) {
+  .header .project-title {
+    font-size: 1.1rem;
+  }
+  .logo {
+    height: 50px;
+  }
+  .menu-bar ul {
+    gap: 0.7rem;
+  }
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .header .project-title {
+    font-size: 1rem;
+  }
+  .logo {
+    height: 40px;
+  }
+  .menu-bar ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .content {
+    padding: 1rem;
+  }
+}

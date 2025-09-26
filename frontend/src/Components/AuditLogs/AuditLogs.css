@@ -1,0 +1,70 @@
+.audit-logs-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.audit-logs-controls {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.audit-logs-controls input {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 250px;
+}
+.audit-logs-table-wrapper {
+  overflow-x: auto;
+}
+.audit-logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+.audit-logs-table th, .audit-logs-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+.audit-logs-table th {
+  background: #f2f6fa;
+  cursor: pointer;
+  user-select: none;
+}
+.audit-logs-table tr:hover {
+  background: #f7fafc;
+}
+.audit-logs-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+.audit-logs-pagination button {
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+  border: 1px solid #234d26;
+  background: #234d26;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+.audit-logs-pagination button:disabled {
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+}
+@media (max-width: 700px) {
+  .audit-logs-container {
+    padding: 0.5rem;
+  }
+  .audit-logs-table th, .audit-logs-table td {
+    padding: 0.5rem;
+    font-size: 0.95em;
+  }
+}

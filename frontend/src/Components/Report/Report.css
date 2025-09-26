@@ -1,0 +1,121 @@
+/* Root container */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.app {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Heading */
+.app h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 40px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Report item spacing */
+.report-item {
+  margin-bottom: 24px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Report button */
+.report-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 18px 24px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #007b9e, #00a6c1);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.report-button:hover {
+  background: linear-gradient(135deg, #00a6c1, #007b9e);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  font-family: "Poppins", sans-serif;
+}
+
+/* Report title and kebele */
+.report-button span:first-child {
+  flex: 1;
+  text-align: left;
+  font-family: "Poppins", sans-serif;
+}
+
+.kebele-label {
+  font-size: 0.95rem;
+  color: #e0f7fa;
+  text-align: right;
+  margin-left: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Report content */
+.report-content {
+  background-color: #ffffff;
+  padding: 20px 24px;
+  margin-top: 12px;
+  font-size: 1rem;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  border-radius: 8px;
+  border: 1px solid #dfe3e8;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+  animation: fadeIn 0.3s ease;
+}
+
+/* Fade in animation for content */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app {
+    padding: 20px 15px;
+  }
+
+  .report-button {
+    padding: 16px 20px;
+    font-size: 1rem;
+  }
+
+  .report-content {
+    padding: 18px 20px;
+    font-size: 0.95rem;
+  }
+
+  .kebele-label {
+    font-size: 0.85rem;
+  }
+
+  .app h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,7 @@
+public class ethp1
+{
+  public static void main(string[] args)
+   {
+     system.out.println("welcome to ethio programming");
+    }
+}

@@ -1,0 +1,117 @@
+/* --- Navigation Bar: Desktop-First, Modern, Responsive --- */
+.menu-bar {
+  background: linear-gradient(90deg, #182848 0%, #234d26 100%);
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px rgba(24, 40, 72, 0.07);
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.menu-bar ul li a,
+.menu-bar ul li.logout {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.01em;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s ease, color 0.2s ease, text-shadow 0.2s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.menu-bar ul li a:hover,
+.menu-bar ul li.logout:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #cfe1ff;
+  text-shadow: 0 2px 8px rgba(79, 140, 255, 0.15);
+  cursor: pointer;
+}
+
+/* Add or update this rule for your footer */
+.footer {
+  padding: 8px 0;        /* Decrease top/bottom padding */
+  font-size: 0.95rem;    /* Optional: slightly smaller text */
+  background: #182848;   /* Keep your background or adjust as needed */
+  color: #fff;
+  text-align: center;
+  min-height: unset;     /* Remove any min-height if set elsewhere */
+  line-height: 1.2;      /* Tighter line height */
+}
+
+.layout-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+
+/* Medium Screens (≤1100px) */
+@media (max-width: 1100px) {
+  .menu-bar ul {
+    gap: 1.5rem;
+  }
+
+  .menu-bar ul li a,
+  .menu-bar ul li.logout {
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+  }
+}
+
+/* Small Tablets (≤800px) */
+@media (max-width: 800px) {
+  .menu-bar ul {
+    gap: 1rem;
+  }
+
+  .menu-bar ul li a,
+  .menu-bar ul li.logout {
+    font-size: 0.95rem;
+    padding: 0.35rem 0.8rem;
+  }
+}
+
+/* Mobile (≤600px) */
+@media (max-width: 600px) {
+  .menu-bar ul {
+    gap: 0.7rem;
+  }
+
+  .menu-bar ul li a,
+  .menu-bar ul li.logout {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+}
+
+/* Extra Small (≤400px) */
+@media (max-width: 400px) {
+  .menu-bar ul {
+    gap: 0.5rem;
+  }
+
+  .menu-bar ul li a,
+  .menu-bar ul li.logout {
+    font-size: 0.78rem;
+    padding: 0.25rem 0.5rem;
+  }
+}

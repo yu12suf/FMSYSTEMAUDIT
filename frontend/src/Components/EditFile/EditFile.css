@@ -1,0 +1,269 @@
+/* General container styling */
+.edit-file-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.form-input {
+  width: 100%;
+  min-width: 220px;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* Section headings */
+.edit-file-container h2,
+.edit-file-container h3,
+.edit-file-container h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Record Details section */
+.record-details {
+  margin-bottom: 30px;
+}
+
+.record-details label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.record-details input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.record-details input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Attached Files section */
+.files-uploaded-section {
+  margin-bottom: 30px;
+}
+
+.files-uploaded-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.files-uploaded-section li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.files-uploaded-section li:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.file-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.file-category {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.file-view-link {
+  color: white !important;
+  background: #007bff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.file-view-link:hover {
+  background: #0056b3;
+}
+
+.delete-file-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-file-btn:hover {
+  background-color: #c82333;
+}
+
+/* Upload Additional Files section */
+.additional-file-upload-section {
+  margin-bottom: 30px;
+}
+
+.additional-file-upload-section input[type="text"],
+.additional-file-upload-section input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.additional-file-upload-section input[type="text"]:focus,
+.additional-file-upload-section input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.additional-file-upload-section button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.additional-file-upload-section button:hover {
+  background-color: #218838;
+}
+
+/* Save Record button */
+.save-record-btn {
+  display: block;
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.save-record-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Toast notifications */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.9em;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.toast.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.toast.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+
+/*             css for additional file display section*/
+
+.additional-files-list {
+  margin-top: 20px;
+}
+
+.additional-file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.file-name {
+  flex: 1;
+  font-size: 14px;
+  color: #333;
+}
+
+.view-file-btn,
+.remove-file-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.view-file-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.remove-file-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.view-file-btn:hover {
+  background-color: #0056b3;
+}
+
+.remove-file-btn:hover {
+  background-color: #c82333;
+}
+.file-category {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+}
+/*-------------to here--------*/
+
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .edit-file-container {
+    padding: 15px;
+  }
+
+  .save-record-btn {
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,147 @@
+/* --- Modern, Desktop-Optimized AddFile Form Styles --- */
+
+/* Root Container */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  background: #f9fafb;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(60, 72, 88, 0.13);
+  padding: 3rem 3rem 2.5rem 3rem;
+  margin: 3rem auto;
+  max-width: 1400px;
+  border: 1.5px solid #e5e7eb;
+}
+
+/* Columns Wrapper */
+.form-columns-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 2rem; /* Space between columns */
+  width: 100%;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  position: relative;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.1rem;
+  font-size: 1.13rem;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.form-group label:hover {
+  color: #2563eb;
+}
+
+.form-group input,
+.form-group select {
+  width: 60%; /* Full width within the column */
+  padding: 0.6rem 1rem; /* Adjusted padding */
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px; /* Slightly smaller border radius */
+  font-size: 1rem; /* Adjusted font size */
+  background: #fff;
+  transition: border 0.2s, box-shadow 0.2s;
+  outline: none;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px #e0e7ff;
+}
+
+.form-group input:hover,
+.form-group select:hover {
+  border-color: #4f8cff;
+}
+
+/* Error Messages */
+.form-group div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff4f4;
+  color: #cc0000;
+  padding: 4px 8px;
+  font-size: 0.85em;
+  border: 1px solid #cc0000;
+  border-radius: 4px;
+  margin-top: 4px;
+  white-space: nowrap;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+/* Buttons */
+.button-container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  width: 100%;
+}
+
+.submit-button-1 {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.13rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #234d26 0%, #2d3748 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.submit-button-1:disabled {
+  background: #c7d2fe;
+  cursor: not-allowed;
+  color: #fff;
+}
+
+.button-container-1 button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #4f8cff 0%, #2563eb 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 4px 16px rgba(79, 140, 255, 0.13);
+}
+
+/* File View Link */
+.file-view-link {
+  color: white !important;
+  background: #007bff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 8px;
+  transition: background 0.2s;
+}
+.file-view-link:hover {
+  background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .form-columns-wrapper {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+    gap: 1.5rem;
+  }
+}
